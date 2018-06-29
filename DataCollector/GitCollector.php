@@ -82,4 +82,12 @@ class GitCollector extends DataCollector
     {
         return 'jdecool.git_collector';
     }
+    
+    /**
+     * Resets collected data
+     */
+    public function reset()
+    {
+        $this->data = [];
+    }
 }
